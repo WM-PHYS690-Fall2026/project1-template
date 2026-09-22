@@ -42,7 +42,7 @@ source .venv/Scripts/activate
 python -m pip install -r requirements.txt
 ```
 
-After installing packages, open `notebooks/00_load_and_compute_mass.ipynb` and select the `.venv` Python kernel. This notebook shows how to load the CMS CSV and compute the dimuon invariant mass from the input four-vectors. You may extend it or create your own analysis notebook or script for the project fit.
+After installing packages, open `notebooks/load_and_compute_mass.ipynb` and select the `.venv` Python kernel. This notebook shows how to load the CMS CSV and compute the dimuon invariant mass from the input four-vectors. It is only a starting point, not a complete project submission. You may extend it or create your own analysis notebook or script for the project fit.
 
 ## Scientific question
 
@@ -116,12 +116,12 @@ Suggested references:
 - Particle Data Group, Upsilon(1S): https://pdglive.lbl.gov/Particle.action?node=M049
 - Particle Data Group, Upsilon(2S): https://pdgprod.lbl.gov/pdgprod/pdgLive/Particle.action?node=M052
 - Particle Data Group, Upsilon(3S): https://pdglive.lbl.gov/Particle.action?node=M048
-- Particle Data Group, Upsilon(4S): https://pdgprod.lbl.gov/pdgprod/pdgLiveJson/Particle.action?home=&node=M047
+- Particle Data Group, Upsilon(4S): https://pdgprod.lbl.gov/pdgprod/pdgLive/Particle.action?home=sumtabM&node=M047
 - CMS Collaboration, "Measurements of the Upsilon(1S), Upsilon(2S), and Upsilon(3S) differential cross sections in pp collisions at sqrt(s) = 7 TeV," Phys. Lett. B 749 (2015) 14: https://cms-results.web.cern.ch/cms-results/public-results/publications/BPH-12-006/
 
 ## Deliverable
 
-Submit a concise, reproducible analysis in a notebook, script, or combination of both. It should allow another student to download the public data and regenerate your main results. Include:
+Submit a concise, reproducible analysis in a notebook, script, or combination of both. It should allow another student to download the public data and regenerate your main results. Your final work should go beyond the starter notebook by fitting models, comparing them, and making an uncertainty statement. Include:
 
 - a brief statement of the scientific question and data provenance;
 - the model equations, fitted parameters, units, and uncertainty method;
@@ -130,7 +130,7 @@ Submit a concise, reproducible analysis in a notebook, script, or combination of
 - your model-comparison result, including the three-versus-four peak test and its limitations;
 - a paragraph distinguishing statistical uncertainty from unmodeled systematics and analysis sensitivity.
 
-Save final figures in `figures/` and keep exploratory files out of the repository. Your conclusion should report what the data support, not simply which optimizer returned the smallest objective.
+Save final figures in `figures/` and keep exploratory files out of the repository. Your conclusion should report what the data support, not simply which optimizer returned the smallest objective. It is acceptable if your exact fitted values differ from another student's values, provided your modeling choices are documented and defensible.
 
 ```text
 figures/upsilon_resonance_fit.png
